@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "ParisineRegular";
+  src: url("./assets/fonts/ParisineRegular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+main {
+  padding-top: 65px;
+}
+
+strong {
+  color: var(--tertiary);
+}
+
+h1 {
+  font-family: "Roboto Serif";
+  font-weight: 500;
+}
+
+h2 {
+  font-family: "ParisineRegular";
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--tertiary);
+  color: var(--quinary);
+  border-radius: 6px;
+}
+
+:root {
+  --primary: #2c2e35;
+  --secondary: rgba(217, 200, 170, 0.55);
+  --tertiary: #8b7659;
+  --quaternary: #d9c8aa;
+  --quinary: #ffffff;
+  --senary: rgba(255, 255, 255, 0.72);
+  --septenary: #beac94;
+}
