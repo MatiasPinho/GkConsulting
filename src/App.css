@@ -3,6 +3,10 @@
   font-family: "ParisineRegular";
   src: url("./assets/fonts/ParisineRegular.otf");
 }
+@font-face {
+  font-family: "DinNextRegular";
+  src: url("./assets/fonts/DINNextLTPro-Regular.otf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,12 +18,15 @@ a {
   color: currentColor;
 }
 
-main {
-  padding-top: 65px;
+li {
+  list-style: none;
 }
 
 strong {
   color: var(--tertiary);
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
 }
 
 h1 {
@@ -28,8 +35,13 @@ h1 {
 }
 
 h2 {
-  font-family: "ParisineRegular";
+  font-family: "DinNextRegular";
   font-weight: 500;
+}
+
+p {
+  font-family: "DinNextRegular";
+  font-weight: 400;
 }
 
 button {
@@ -39,6 +51,7 @@ button {
   background-color: var(--tertiary);
   color: var(--quinary);
   border-radius: 6px;
+  font-family: "Roboto Serif";
 }
 
 :root {
