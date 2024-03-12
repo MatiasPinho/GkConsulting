@@ -1,0 +1,85 @@
+.card-services {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--tertiary);
+  border-radius: 8px;
+  padding: 1rem 0;
+  /* max-width: 90%; */
+  width: 340px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  gap: 1rem;
+}
+
+.card-services__logo-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  color: var(--tertiary);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card-services__ul-description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.card-services__ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  margin: 0 11%;
+  gap: 1rem;
+}
+
+.card-services__description {
+  border-bottom: 5px solid var(--tertiary);
+  padding: 0.8rem 1rem;
+  outline: 2px solid var(--tertiary);
+  border-radius: 8px;
+}
+
+.Bribery-icon {
+  width: 90px;
+  height: 90px;
+}
+
+.card-services__ul:last-child .card-services__description:last-child {
+  margin-bottom: 1rem;
+}
+
+/* @media (min-width: 1000px) {
+  .card-services {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-services__logo-title {
+    flex-direction: row;
+    margin-top: initial;
+    font-size: 2rem;
+    width: 16ch;
+  }
+
+  .card-services__ul-description-container {
+    flex-direction: row;
+    gap: 0;
+    margin: 0;
+  }
+
+  .card-services__ul {
+    margin: initial;
+    width: 20ch;
+  }
+
+  .card-services__ul:last-child .card-services__description:last-child {
+    margin-bottom: 0;
+  }
+} */

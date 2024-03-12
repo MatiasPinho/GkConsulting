@@ -1,5 +1,37 @@
 import "./Services.css";
+import { CardServices } from "../CardServices/CardServices";
 export const Services = () => {
+  const servicesDescriptions_1 = {
+    description_1: [
+      "Constitución de empresas (S.R.L., S.A., S.A.U., S.A.S, Fundaciones, etc.)",
+      "Libros Societarios",
+      "Gerencia de Empresas",
+      "Gestión de Contratos",
+    ],
+    description_2: [
+      "Resolución de disputas",
+      "Coordinación y Capacitación legal interna",
+      "Trámites en IGJ y DPPJ",
+      "Asesoramiento online",
+      "Trámites en organismos Públicos, Provinciales y Nacionales",
+    ],
+  };
+
+  const servicesDescriptions_2 = {
+    description_1: [
+      "Análisis y Planificación Financiera",
+      "Liquidación de Impuestos mensuales",
+      "Regularización Impositiva",
+      "Ganancias y Bienes Personales",
+    ],
+    description_2: [
+      "Monotributo",
+      "Coordinación y Capacitación en contabilidad interna",
+      "Trámites en AFIP y organismos provinciales / municipales",
+      "Asesoramiento online",
+    ],
+  };
+
   return (
     <section className="services-section-container">
       <section className="services-section">
@@ -18,6 +50,18 @@ export const Services = () => {
           <p className="services-section__additional-info">
             Nuestros servicios abarcan un amplio espectro:
           </p>
+        </section>
+        <section className="services-section__cards-container">
+          <CardServices
+            title="Servicios Contables"
+            servicesDescriptions_1={servicesDescriptions_1}
+          />
+          {
+            <CardServices
+              title="Servicios Contables"
+              servicesDescriptions_2={servicesDescriptions_2}
+            />
+          }
         </section>
       </section>
     </section>
