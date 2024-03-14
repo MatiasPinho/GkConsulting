@@ -4,6 +4,7 @@
   position: fixed;
   z-index: 10;
   width: 100%;
+  font-family: "Roboto Serif";
 }
 
 .header__nav {
@@ -47,7 +48,7 @@
 
   .header__menu-li {
     cursor: pointer;
-    font-size: 1.363rem;
+    font-size: 1.1rem;
     font-weight: 300;
   }
 

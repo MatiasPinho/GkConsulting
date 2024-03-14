@@ -5,7 +5,7 @@
       rgb(0 0 0 / 48%) 26.99%,
       rgb(0 0 0 / 48%) 26.99%
     ),
-    url(./background_home_image.webp);
+    url(/background_home_image.webp);
   /* min-height: 100vh; */
   min-height: calc(100vh - 4rem);
   position: relative;
@@ -23,6 +23,7 @@
   width: 91%;
   display: flex;
   flex-direction: column;
+  padding: 2rem 0;
   align-items: flex-start;
   margin: 0 auto;
 }
@@ -60,7 +61,7 @@
         rgba(0, 0, 0, 0.31) 73.02%,
         rgba(0, 0, 0, 0.12) 83.72%
       ),
-      url(./background_home_image.webp);
+      url(/background_home_image.webp);
     align-items: flex-start;
     background-position: 25% 30%;
   }

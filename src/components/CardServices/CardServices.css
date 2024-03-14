@@ -36,10 +36,8 @@
 }
 
 .card-services__description {
-  border-bottom: 5px solid var(--tertiary);
-  padding: 0.8rem 1rem;
-  outline: 2px solid var(--tertiary);
-  border-radius: 8px;
+  border-bottom: 2px solid var(--tertiary);
+  padding: 0.8rem 0;
 }
 
 .Bribery-icon {
