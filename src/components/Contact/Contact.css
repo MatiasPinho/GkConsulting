@@ -3,7 +3,7 @@
   flex-direction: column;
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 4.5rem 0;
   color: var(--primary);
   font-family: "Roboto Serif";
 }
@@ -24,8 +24,8 @@
   color: #2c2e35;
   font-weight: 400;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 55px;
+  /* margin-top: 40px; */
+  margin-bottom: 25px;
   border-bottom: 4px solid;
   line-height: 4rem;
   width: fit-content;
