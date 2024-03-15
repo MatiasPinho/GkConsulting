@@ -65,7 +65,7 @@
 
 .about__image--3 {
   grid-column: span 2;
-  height: 74%;
+  height: 400px;
 }
 
 @media (max-width: 360px) {
