@@ -5,7 +5,8 @@ export const About = () => {
       <div className="about">
         <article className="about__info">
           <h4 className="about__info-heading">
-            <strong>¿Quienes</strong> somos <strong>?</strong>
+            <strong className="alternative-strong">¿Quienes</strong> somos
+            <strong className="alternative-strong">?</strong>
           </h4>
           <div className="about__info-container">
             <p className="about__info-paragraph">

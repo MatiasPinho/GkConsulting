@@ -33,6 +33,13 @@ strong {
   font-style: inherit;
 }
 
+.alternative-strong {
+  color: var(--septenary);
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
 h1 {
   font-family: "Roboto Serif";
   font-weight: 500;
@@ -66,4 +73,50 @@ button {
   --quinary: #ffffff;
   --senary: rgba(255, 255, 255, 0.72);
   --septenary: #beac94;
+}
+
+/* WebKit Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(217, 200, 170, 0.3) 0%,
+    #d9c8aa 49%,
+    rgba(217, 200, 170, 0.3) 99.5%
+  );
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bba988; /* Color al pasar el mouse */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+/* Mozilla Scrollbar */
+::-moz-scrollbar {
+  width: 12px;
+}
+
+::-moz-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    rgba(217, 200, 170, 0.3) 0%,
+    #d9c8aa 49%,
+    rgba(217, 200, 170, 0.3) 99.5%
+  );
+  border-radius: 6px;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: #bba988; /* Color al pasar el mouse */
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1;
 }

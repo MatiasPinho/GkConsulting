@@ -3,9 +3,6 @@
   color: var(--quinary);
 }
 
-.about {
-}
-
 .about__info {
   display: flex;
   flex-direction: column;
@@ -82,10 +79,17 @@
   }
 }
 
+@media (min-width: 720px) {
+  .about__info-heading {
+    font-size: 3.688rem;
+    margin-left: 3%;
+  }
+}
+
 @media (min-width: 1000px) {
   .about-container {
     display: flex;
-    height: 50rem;
+    height: 46rem;
   }
 
   .about {
@@ -96,11 +100,6 @@
     max-width: 90%;
 
     margin: 0 auto;
-  }
-
-  .about__info-heading {
-    font-size: 3.688rem;
-    margin-left: 3%;
   }
 
   .about__images-container {
