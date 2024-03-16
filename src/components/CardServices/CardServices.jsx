@@ -25,7 +25,7 @@ export const CardServices = ({
                 </li>
               ))}
         </ul>
-        <ul className="card-services__ul">
+        {/* <ul className="card-services__ul">
           {servicesDescriptions_1
             ? servicesDescriptions_1.description_2.map((description) => (
                 <li key={description} className="card-services__description">
@@ -37,7 +37,7 @@ export const CardServices = ({
                   {description}
                 </li>
               ))}
-        </ul>
+        </ul> */}
       </div>
     </article>
   );

@@ -11,7 +11,7 @@ export const Contact = () => {
     <section className="contact-container">
       <section className="contact__margin">
         <h5 className="contact__title">
-          Contacta con <strong>nosotros</strong>
+          Contacta con <strong>nosotras</strong>
         </h5>
         <section className="contacts">
           <section className="contact">

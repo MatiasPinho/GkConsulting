@@ -5,7 +5,9 @@
   border-radius: 8px;
   padding: 1rem 0;
   /* max-width: 90%; */
+  /* max-width: 500px; */
   flex: 1 1 48%;
+  position: relative;
   width: 340px;
   /* margin: 0 auto; */
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -31,7 +33,7 @@
 .card-services__ul {
   display: flex;
   flex-direction: column;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0 6%;
   gap: 1rem;
 }
@@ -42,12 +44,57 @@
 }
 
 .Bribery-icon {
-  width: 90px;
-  height: 90px;
+  width: 75px;
+  height: 75px;
 }
 
 .card-services__ul:last-child .card-services__description:last-child {
   margin-bottom: 1rem;
+}
+
+/* .card-services::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  height: 70%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  top: 14%;
+  width: 15px;
+  background-color: var(--tertiary);
+} */
+
+@media (min-width: 720px) {
+  .card-services__logo-title {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 4px;
+  }
+
+  .card-services {
+    width: 90%;
+    max-width: none;
+    flex: none;
+    gap: 0;
+    text-align: center;
+  }
+
+  .card-services__ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: initial;
+    justify-content: center;
+  }
+
+  .card-services__ul-description-container {
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+  }
+
+  .card-services__ul:last-child .card-services__description:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* @media (min-width: 1000px) {

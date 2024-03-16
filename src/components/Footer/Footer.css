@@ -56,20 +56,18 @@
     flex-direction: row;
     justify-content: space-evenly;
     gap: 0;
+    width: 80%;
   }
 
   .footer__logo {
     order: 0;
-    width: 69px;
-    height: 69px;
+
     flex: 1.2;
     display: flex;
     justify-content: center;
   }
 
   .footer__logo-img {
-    width: 69px;
-    height: 69px;
   }
 
   .footer__contact {

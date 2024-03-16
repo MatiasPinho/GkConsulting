@@ -7,8 +7,6 @@ export const Services = () => {
       "Libros Societarios",
       "Gerencia de Empresas",
       "Gestión de Contratos",
-    ],
-    description_2: [
       "Resolución de disputas",
       "Coordinación y Capacitación legal interna",
       "Trámites en IGJ y DPPJ",
@@ -23,8 +21,6 @@ export const Services = () => {
       "Liquidación de Impuestos mensuales",
       "Regularización Impositiva",
       "Ganancias y Bienes Personales",
-    ],
-    description_2: [
       "Monotributo",
       "Coordinación y Capacitación en contabilidad interna",
       "Trámites en AFIP y organismos provinciales / municipales",

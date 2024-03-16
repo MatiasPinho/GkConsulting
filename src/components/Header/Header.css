@@ -4,7 +4,6 @@
   position: fixed;
   z-index: 10;
   width: 100%;
-  font-family: "Roboto Serif";
 }
 
 .header__nav {
@@ -28,6 +27,10 @@
 .nav-logo {
   width: 70px;
   height: 70px;
+}
+
+.header__menu-li {
+  font-family: "Roboto Serif";
 }
 
 @media (min-width: 720px) {

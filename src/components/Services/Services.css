@@ -65,8 +65,8 @@
     padding: 2rem 0;
   }
 
-  .services-section__info {
-    max-width: 70%;
+  .services-section {
+    width: 80%;
   }
 
   .services-section__title {
@@ -75,9 +75,13 @@
 
   .services-section__description {
     font-size: 1.1rem;
+    width: 90%;
   }
 
   .services-section__additional-info {
     font-size: 1.1rem;
+  }
+
+  .services-section__cards-container {
   }
 }
