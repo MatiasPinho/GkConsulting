@@ -29,7 +29,7 @@ export const Services = () => {
   };
 
   return (
-    <section className="services-section-container">
+    <section id="services-id" className="services-section-container">
       <section className="services-section">
         <section className="services-section__info">
           <h3 className="services-section__title">

@@ -22,7 +22,7 @@
   font-size: 3rem;
   color: #2c2e35;
   font-weight: 400;
-  text-align: center;
+
   /* margin-top: 40px; */
   margin-bottom: 25px;
   border-bottom: 4px solid;
@@ -222,6 +222,12 @@ textarea:-webkit-autofill:active {
   align-items: center;
 }
 
+@media (max-width: 437px) {
+  .contact__title {
+    width: 244px;
+  }
+}
+
 @media (max-width: 720px) {
   .contacts {
     flex-direction: column;
@@ -245,6 +251,6 @@ textarea:-webkit-autofill:active {
   }
 
   .contact__title {
-    font-size: 2.4125rem;
+    font-size: 2.3125rem;
   }
 }

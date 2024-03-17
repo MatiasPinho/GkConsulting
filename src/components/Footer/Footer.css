@@ -2,8 +2,11 @@
   background-color: var(--primary);
   color: var(--quinary);
   font-size: 1.1rem;
-  font-family: "Roboto Serif";
   position: relative;
+}
+
+.footer a {
+  font-family: "Roboto Serif";
 }
 
 .footer-container {
@@ -49,6 +52,10 @@
 
 .footer-items {
   padding: 1rem 0;
+}
+
+.footer__contact-title {
+  font-family: "Roboto Serif";
 }
 
 @media (min-width: 720px) {

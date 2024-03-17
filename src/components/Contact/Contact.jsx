@@ -8,7 +8,7 @@ import { Telegram } from "../../assets/icons/Telegram";
 
 export const Contact = () => {
   return (
-    <section className="contact-container">
+    <section id="contact-id" className="contact-container">
       <section className="contact__margin">
         <h5 className="contact__title">
           Contacta con <strong>nosotras</strong>
