@@ -7,7 +7,7 @@ import { Root } from "./root/Root.jsx";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "./",
       element: (
         <Root>
           <Home />
@@ -15,7 +15,7 @@ function App() {
       ),
     },
     {
-      path: "/aboutHistory",
+      path: "./aboutHistory",
       element: (
         <Root>
           <AboutHistory />
