@@ -32,7 +32,7 @@ export const Header = () => {
           </li>
           <li className="header__menu-li">
             <NavLink
-              to="/about"
+              to="/aboutHistory"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }

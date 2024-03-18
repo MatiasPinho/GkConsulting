@@ -1,0 +1,20 @@
+.about-history-container {
+  background-color: var(--primary);
+
+  min-height: 100vh;
+}
+
+.line-separator {
+  border-top: 2px solid var(--septenary);
+  position: fixed;
+  width: 100%;
+  z-index: 100000000;
+}
+
+.about-history {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 91%;
+  margin: 0 auto;
+}

@@ -28,7 +28,7 @@ export const Footer = () => {
             </li>
             <li className="footer__nav-item">
               <NavLink
-                to="/about"
+                to="/aboutHistory"
                 className={({ isActive, isPending }) =>
                   isPending ? "pending" : isActive ? "active" : ""
                 }

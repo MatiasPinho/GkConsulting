@@ -1,0 +1,20 @@
+{
+  "CardInfo_1": {
+    "name": "Gabriela Barbero",
+    "description": [
+      "Soy Contadora Pública, con una sólida base en técnicas de gestión de organizaciones y enriquecida con capacitaciones en Business y Data Analytics, elaboración de presupuestos, ajuste por inflación impositivo y Prevención de lavado de activos y financiamiento del terrorismo.",
+      "Cuento con más de 10 años de experiencia en el ámbito de la contabilidad, finanzas y gestión, comencé mi carrera en el mundo corporativo en Misiones, mi pueblo natal, y hace unos años me vine a instalar en Buenos Aires. Mi carrera comenzó en roles de analista y auditoría interna, escalando a posiciones de mayor responsabilidad y liderazgo, como se evidencia en mi experiencia con empresas como Estudio Integral, Dos Arroyos, Prosumia, Pipol Hub, Consultores M y B, entre otras.",
+      "A lo largo de mi carrera profesional he destacado teniendo a mi cargo la gestión contable completa, presentaciones impositivas y auditorías de empresas. Me actualizo y capacito todos los años en busca de profundizar mi capacidad analítica, organizativa y mi compromiso con la obtención de resultados eficientes y efectivos.",
+      "He fundado GK consulting, con Katherine, con el objetivo de ayudar al mundo empresarial, aportando innovación, liderando y gestionando proyectos complejos en entornos desafiantes."
+    ],
+    "img": "./card_history_image1.png"
+  },
+  "CardInfo_2": {
+    "name": "Katherine Simon",
+    "description": [
+      "Soy Contadora Pública, con una sólida base en técnicas de gestión de organizaciones y enriquecida con capacitaciones en Business y Data Analytics, elaboración de presupuestos, ajuste por inflación impositivo y Prevención de lavado de activos y financiamiento del terrorismo.",
+      "Cuento con más de 10 años de experiencia en el ámbito de la contabilidad, finanzas y gestión, comencé mi carrera en el mundo corporativo en Misiones, mi pueblo natal, y hace unos años me vine a instalar en Buenos Aires. Mi carrera comenzó en roles de analista y auditoría interna, escalando a posiciones de mayor responsabilidad y liderazgo, como se evidencia en mi experiencia con empresas como Estudio Integral, Dos Arroyos, Prosumia, Pipol Hub, Consultores M y B, entre otras."
+    ],
+    "img": "./card_history_image2.png"
+  }
+}

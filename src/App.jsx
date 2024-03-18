@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import { About } from "./Pages/About/About.jsx";
+import { AboutHistory } from "./Pages/AboutHistory/AboutHistory.jsx";
 import { Home } from "./Pages/Home/Home.jsx";
 import { Root } from "./root/Root.jsx";
 
@@ -15,10 +15,10 @@ function App() {
       ),
     },
     {
-      path: "/about",
+      path: "/aboutHistory",
       element: (
         <Root>
-          <About />
+          <AboutHistory />
         </Root>
       ),
     },

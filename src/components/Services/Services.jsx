@@ -1,33 +1,8 @@
 import "./Services.css";
 import { CardServices } from "../CardServices/CardServices";
+import cardServices from "../../../data/cardsService.json";
+
 export const Services = () => {
-  const servicesDescriptions_1 = {
-    description_1: [
-      "Constitución de empresas (S.R.L., S.A., S.A.U., S.A.S, Fundaciones, etc.)",
-      "Libros Societarios",
-      "Gerencia de Empresas",
-      "Gestión de Contratos",
-      "Resolución de disputas",
-      "Coordinación y Capacitación legal interna",
-      "Trámites en IGJ y DPPJ",
-      "Asesoramiento online",
-      "Trámites en organismos Públicos, Provinciales y Nacionales",
-    ],
-  };
-
-  const servicesDescriptions_2 = {
-    description_1: [
-      "Análisis y Planificación Financiera",
-      "Liquidación de Impuestos mensuales",
-      "Regularización Impositiva",
-      "Ganancias y Bienes Personales",
-      "Monotributo",
-      "Coordinación y Capacitación en contabilidad interna",
-      "Trámites en AFIP y organismos provinciales / municipales",
-      "Asesoramiento online",
-    ],
-  };
-
   return (
     <section id="services-id" className="services-section-container">
       <section className="services-section">
@@ -48,16 +23,18 @@ export const Services = () => {
           </p>
         </section>
         <section className="services-section__cards-container">
-          <CardServices
-            title="Servicios Contables"
-            servicesDescriptions_1={servicesDescriptions_1}
-          />
-          {
+          {cardServices.cardServices_1 && (
             <CardServices
-              title="Servicios Contables"
-              servicesDescriptions_2={servicesDescriptions_2}
+              title={cardServices.cardServices_1.title}
+              description={cardServices.cardServices_1.description}
             />
-          }
+          )}
+          {cardServices.cardServices_2 && (
+            <CardServices
+              title={cardServices.cardServices_2.title}
+              description={cardServices.cardServices_2.description}
+            />
+          )}
         </section>
       </section>
     </section>
