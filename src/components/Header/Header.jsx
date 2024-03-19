@@ -83,7 +83,7 @@ export const Header = () => {
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
-              to="/aboutHistory"
+              to="/blog"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }

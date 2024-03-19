@@ -36,7 +36,16 @@ export const Footer = () => {
                 Historia
               </NavLink>
             </li>
-            <li className="footer__nav-item">Blog</li>
+            <li className="footer__nav-item">
+              <NavLink
+                to="/blog"
+                className={({ isActive, isPending }) =>
+                  isPending ? "pending" : isActive ? "active" : ""
+                }
+              >
+                Blog
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <div className="footer__logo">
