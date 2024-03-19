@@ -4,9 +4,28 @@ import { Location } from "../../assets/icons/Location";
 import { Linkedin } from "../../assets/icons/Linkedin";
 import { Phone } from "../../assets/icons/Phone";
 import { Instagram } from "../../assets/icons/Instagram";
-import { Telegram } from "../../assets/icons/Telegram";
-
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+const apiUrl = import.meta.env.VITE_API_URL;
 export const Contact = () => {
+  console.log(apiUrl);
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_7abutzk", "template_41tu6wj", form.current, {
+        publicKey: "PYalVQ2_hL9VI25oR",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <section id="contact-id" className="contact-container">
       <section className="contact__margin">
@@ -16,7 +35,12 @@ export const Contact = () => {
         <section className="contacts">
           <section className="contact">
             <div className="contact__form-container">
-              <form className="contact__form" action="">
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="contact__form"
+                action=""
+              >
                 <label className="contact__label" htmlFor="nombre">
                   Nombre
                 </label>
@@ -45,7 +69,11 @@ export const Contact = () => {
                   name="message"
                   id="message"
                 ></textarea>
-                <button className="contact__button button-a" type="submit">
+                <button
+                  className="contact__button button-a"
+                  type="submit"
+                  value="Send"
+                >
                   Enviar
                 </button>
               </form>
