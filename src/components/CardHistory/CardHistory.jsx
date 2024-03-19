@@ -1,14 +1,25 @@
 import { Linkedin } from "../../assets/icons/Linkedin";
 import { useState } from "react";
 import "./CardHistory.css";
-export const CardHistory = ({ name, description, img }) => {
+export const CardHistory = ({ name, description, img, surname }) => {
+  console.log(surname);
   const [isImageClicked, setIsImageClicked] = useState(false);
   console.log(isImageClicked);
   return (
     <article className="about-history__profile">
       <span className="about-history__profile-info">
         <Linkedin className="about-history__profile-linkedin" />
-        <h2 className="about-history__profile-name">{name}</h2>
+        <h2 className="about-history__profile-name">
+          {surname === "Barbero" ? (
+            <>
+              {name} <strong className="alternative-strong">{surname}</strong>
+            </>
+          ) : (
+            <>
+              <strong>{name}</strong> {surname}
+            </>
+          )}
+        </h2>
       </span>
       <div className="about-history__profile-content">
         <img

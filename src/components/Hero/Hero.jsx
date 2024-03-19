@@ -11,7 +11,9 @@ export const Hero = () => {
         <h2 className="hero-section__subtitle">
           Potenciamos el crecimiento empresarial a través de una estructura.
         </h2>
-        <button className="hero-section__button">Leer más</button>
+        <a href="/#about-id" className="hero-section__button button-a">
+          Leer más
+        </a>
       </section>
     </section>
   );

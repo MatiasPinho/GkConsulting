@@ -41,6 +41,12 @@
   transform: translate(-50%, -50%);
 }
 
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
 .footer__contact-list {
   display: flex;
 }
@@ -74,11 +80,8 @@
     justify-content: center;
   }
 
-  .footer__logo-img {
-  }
-
   .footer__contact {
-    display: flex;
+    flex-direction: row;
     gap: 0.6rem;
     align-items: center;
     flex: 1;

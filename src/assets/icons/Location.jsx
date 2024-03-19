@@ -10,7 +10,7 @@ export const Location = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      class="location-svg"
+      className="location-svg"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 4.5l-4 4l-4 1.5l-1.5 1.5l7 7l1.5 -1.5l1.5 -4l4 -4" />
