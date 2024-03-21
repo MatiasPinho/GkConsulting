@@ -1,10 +1,44 @@
 import "./Header.css";
 import { Menu as MenuIcon } from "../../assets/icons/Menu";
 import { Logo as LogoIcon } from "../../assets/icons/Logo";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Home } from "../../Pages/Home/Home";
 
 export const Header = () => {
+  const [isActivesHovers, setIsActiveHovers] = useState({
+    Home: true,
+    Services: false,
+    About: false,
+    History: false,
+    Blog: false,
+    Contact: false,
+  });
+  console.log(isActivesHovers.Home);
+  window.onscroll = () => {
+    const scrollPosition = scrollY;
+    let activeSection = null;
+
+    if (scrollPosition < 400) {
+      activeSection = "Home";
+    } else if (scrollPosition >= 400 && scrollPosition < 1400) {
+      activeSection = "Services";
+    } else if (scrollPosition >= 1400 && scrollPosition < 1900) {
+      activeSection = "About";
+    } else if (scrollPosition >= 1900) {
+      activeSection = "Contact";
+    }
+
+    setIsActiveHovers((prev) => ({
+      Home: activeSection === "Home",
+      Services: activeSection === "Services",
+      About: activeSection === "About",
+      History: false, // assuming History is not in the scroll position logic
+      Blog: false, // assuming Blog is not in the scroll position logic
+      Contact: activeSection === "Contact",
+    }));
+  };
+
   const [isMenuClicked, setIsMenuClicked] = useState(false);
   console.log(isMenuClicked);
   return (
@@ -27,82 +61,70 @@ export const Header = () => {
           }`}
         >
           <li className="header__menu-li">
-            <NavLink
+            <Link
+              className={isActivesHovers.Home ? "active-li" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
               to="/"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
             >
               Inicio
-            </NavLink>
+            </Link>
           </li>
           <li className="header__menu-li">
-            <NavLink
+            <Link
+              className={isActivesHovers.Services ? "active-li" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
               to="/#services-id"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
             >
               Servicios
-            </NavLink>
+            </Link>
           </li>
           <li className="header__menu-li">
-            <NavLink
+            <Link
+              className={isActivesHovers.About ? "active-li" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
               to="/#about-id"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
             >
               Nosotras
-            </NavLink>
+            </Link>
           </li>
           <li className="header__menu-li">
-            <NavLink
+            <Link
+              className={isActivesHovers.Home ? "active" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
               to="/aboutHistory"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
             >
               Historia
-            </NavLink>
+            </Link>
           </li>
           <li className="header__menu-li">
-            <NavLink
+            <Link
+              className={isActivesHovers.Home ? "active" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
               to="/blog"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
             >
               Blog
-            </NavLink>
+            </Link>
           </li>
           <li className="header__menu-li header__menu-li--button">
-            <NavLink
+            <Link
+              className={isActivesHovers.Contact ? "active-li" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
               to="/#contact-id"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
             >
               Contacto
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </nav>

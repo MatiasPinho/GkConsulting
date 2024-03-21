@@ -111,9 +111,11 @@
 
   .about__images-container {
     width: 50%;
+    position: relative;
   }
 
   .about__images {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

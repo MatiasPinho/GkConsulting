@@ -74,6 +74,7 @@ export const Contact = () => {
                   id="nombre"
                   name="from_name"
                   placeholder="Carmen Barbieri"
+                  required
                 />
                 <label className="contact__label" htmlFor="email">
                   Correo electronico
@@ -84,6 +85,7 @@ export const Contact = () => {
                   id="email"
                   name="from_email"
                   placeholder="carmenbarbiere@gkconsulting.com"
+                  required
                 />
                 <label className="contact__label" htmlFor="message">
                   Tu mensaje
@@ -92,6 +94,7 @@ export const Contact = () => {
                   className="contact__textarea"
                   name="message"
                   id="message"
+                  required
                 ></textarea>
                 <button
                   className="contact__button button-a"
@@ -107,9 +110,7 @@ export const Contact = () => {
             <p className="contact__information-paragraph">
               Curabitur tempor, sem at hendrerit maximus, elit turpis ornare
               nunc, sit amet bibendum tortor lacus ut dolor. Fusce mi arcu,
-              iaculis at tortor eu, efficitur iaculis leo. Aenean lacinia libero
-              turpis, sit amet euismod lectus facilisis non. Aliquam vestibulum
-              semper lacus, nec facilisis velit faucibus eget.
+              iaculis at tortor eu, efficitur iaculis leo.
             </p>
 
             <ul className="contact__information-list">
