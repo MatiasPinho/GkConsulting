@@ -7,50 +7,61 @@
 
 .blog-content {
   width: 91%;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
 }
 
 .blog__header {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog__title {
+  border-bottom: 4px solid;
+  line-height: 4rem;
+  width: fit-content;
+  border-image: linear-gradient(90deg, #d9c8aa4d, #d9c8aa 49%, #d9c8aa4d 99.5%)
+    1;
 }
 
 .blog__logo {
   width: 40px;
   height: 40px;
+  border-radius: 10px;
 }
 
 .blog__feed {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
   gap: 2rem;
+  max-width: 95%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .instagram-container {
   max-height: 700px;
 }
 
-.ig-container {
+.ig-2 {
   height: 426px !important;
   border-radius: 10px !important;
 }
 
-/* 
-.blog__iframe-container {
-  max-width: 540px;
-  margin: 0 auto;
+@media (max-width: 420px) {
+  .blog__title {
+    line-height: normal;
+  }
 }
 
-.blog__iframe {
-  width: 100%;
-  height: 600px;
-  max-width: 540px;
-  min-width: 326px;
-  border: 0;
-  border-radius: 3px;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-  margin: 1px;
-  box-sizing: border-box;
-} */
+@media (max-width: 480px) {
+  .blog__feed {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

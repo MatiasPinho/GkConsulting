@@ -4,10 +4,21 @@ import { Location } from "../../assets/icons/Location";
 import { Linkedin } from "../../assets/icons/Linkedin";
 import { Phone } from "../../assets/icons/Phone";
 import { Instagram } from "../../assets/icons/Instagram";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
 const apiUrl = import.meta.env.VITE_API_URL;
 export const Contact = () => {
+  const [isEmailSend, setIsEmailSend] = useState(false);
+  useEffect(() => {
+    isEmailSend
+      ? setTimeout(() => {
+          setIsEmailSend(false);
+        }, 3000)
+      : null;
+  }, [isEmailSend]);
+
+  console.log(isEmailSend);
   console.log(apiUrl);
   const form = useRef();
   const sendEmail = (e) => {
@@ -20,12 +31,15 @@ export const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setIsEmailSend(true);
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
   };
+
   return (
     <section id="contact-id" className="contact-container">
       <section className="contact__margin">
@@ -41,6 +55,16 @@ export const Contact = () => {
                 className="contact__form"
                 action=""
               >
+                <div
+                  className={`success-message ${
+                    isEmailSend ? "success-message-show" : ""
+                  }`}
+                >
+                  <p>
+                    ¡Tu mensaje se ha enviado con{" "}
+                    <strong className="alternative-strong">éxito</strong>!
+                  </p>
+                </div>
                 <label className="contact__label" htmlFor="nombre">
                   Nombre
                 </label>
@@ -48,7 +72,7 @@ export const Contact = () => {
                   className="contact__input"
                   type="text"
                   id="nombre"
-                  name="nombre"
+                  name="from_name"
                   placeholder="Carmen Barbieri"
                 />
                 <label className="contact__label" htmlFor="email">
@@ -58,7 +82,7 @@ export const Contact = () => {
                   className="contact__input"
                   type="email"
                   id="email"
-                  name="email"
+                  name="from_email"
                   placeholder="carmenbarbiere@gkconsulting.com"
                 />
                 <label className="contact__label" htmlFor="message">
