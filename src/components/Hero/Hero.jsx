@@ -3,22 +3,22 @@ import { LogoVariant } from "../../assets/icons/LogoVariant";
 import Typewriter from "typewriter-effect/dist/core";
 import "./Hero.css";
 export const Hero = () => {
-  useEffect(() => {
-    const typewriter = new Typewriter(".hero-section__subtitle", {
-      strings: [
-        "Potenciamos el crecimiento empresarial a través de una estructura.",
-      ],
-      autoStart: true,
-      loop: true,
-      delay: 20,
-      deleteSpeed: 18,
-      wrapperClassName: ".hero-section__subtitle",
-    }).start();
+  // useEffect(() => {
+  //   const typewriter = new Typewriter(".hero-section__subtitle", {
+  //     strings: [
+  //       "Potenciamos el crecimiento empresarial a través de una estructura.",
+  //     ],
+  //     autoStart: true,
+  //     loop: true,
+  //     delay: 20,
+  //     deleteSpeed: 18,
+  //     wrapperClassName: ".hero-section__subtitle",
+  //   }).start();
 
-    return () => {
-      typewriter.stop();
-    };
-  }, []);
+  //   return () => {
+  //     typewriter.stop();
+  //   };
+  // }, []);
   return (
     <section className="hero-section-container">
       <section className="hero-section">
