@@ -48,7 +48,9 @@ export const Footer = () => {
             </li>
           </ul>
         </nav>
-        <div className="footer__logo"></div>
+        <div className="footer__logo">
+          <LogoVariant />
+        </div>
         <div className="footer__contact">
           <p className="footer__contact-title">Contactanos:</p>
           <ul className="footer__contact-list">
