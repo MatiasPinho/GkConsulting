@@ -1,46 +1,20 @@
 import "./Header.css";
-import { Menu as MenuIcon } from "../../assets/icons/Menu";
 import { Logo as LogoIcon } from "../../assets/icons/Logo";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { Home } from "../../Pages/Home/Home";
+import { useState, useEffect } from "react";
+import { UseScrollPosition } from "../../hooks/UseScrollPosition";
+import { useLocation } from "react-router-dom";
 
 export const Header = () => {
-  const [isActivesHovers, setIsActiveHovers] = useState({
-    Home: true,
-    Services: false,
-    About: false,
-    History: false,
-    Blog: false,
-    Contact: false,
-  });
-  console.log(isActivesHovers.Home);
-  window.onscroll = () => {
-    const scrollPosition = scrollY;
-    let activeSection = null;
-
-    if (scrollPosition < 400) {
-      activeSection = "Home";
-    } else if (scrollPosition >= 400 && scrollPosition < 1400) {
-      activeSection = "Services";
-    } else if (scrollPosition >= 1400 && scrollPosition < 1900) {
-      activeSection = "About";
-    } else if (scrollPosition >= 1900) {
-      activeSection = "Contact";
-    }
-
-    setIsActiveHovers((prev) => ({
-      Home: activeSection === "Home",
-      Services: activeSection === "Services",
-      About: activeSection === "About",
-      History: false, // assuming History is not in the scroll position logic
-      Blog: false, // assuming Blog is not in the scroll position logic
-      Contact: activeSection === "Contact",
-    }));
-  };
-
+  const location = useLocation();
+  const currentURL = location.pathname;
+  const isActivesHovers = UseScrollPosition();
+  const body = document.body;
   const [isMenuClicked, setIsMenuClicked] = useState(false);
-  console.log(isMenuClicked);
+  isMenuClicked
+    ? body.classList.add("overflow")
+    : body.classList.remove("overflow");
+
   return (
     <header className="header">
       <nav className="header__nav">
@@ -62,7 +36,13 @@ export const Header = () => {
         >
           <li className="header__menu-li">
             <Link
-              className={isActivesHovers.Home ? "active-li" : ""}
+              className={
+                isActivesHovers.Home &&
+                currentURL !== "/aboutHistory" &&
+                currentURL !== "/blog"
+                  ? "active-li"
+                  : ""
+              }
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
@@ -73,7 +53,13 @@ export const Header = () => {
           </li>
           <li className="header__menu-li">
             <Link
-              className={isActivesHovers.Services ? "active-li" : ""}
+              className={
+                isActivesHovers.Services &&
+                currentURL !== "/aboutHistory" &&
+                currentURL !== "/blog"
+                  ? "active-li"
+                  : ""
+              }
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
@@ -84,7 +70,13 @@ export const Header = () => {
           </li>
           <li className="header__menu-li">
             <Link
-              className={isActivesHovers.About ? "active-li" : ""}
+              className={
+                isActivesHovers.About &&
+                currentURL !== "/aboutHistory" &&
+                currentURL !== "/blog"
+                  ? "active-li"
+                  : ""
+              }
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
@@ -95,18 +87,24 @@ export const Header = () => {
           </li>
           <li className="header__menu-li">
             <Link
-              className={isActivesHovers.Home ? "active" : ""}
+              className={
+                isActivesHovers.Contact &&
+                currentURL !== "/aboutHistory" &&
+                currentURL !== "/blog"
+                  ? "active-li"
+                  : ""
+              }
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
-              to="/aboutHistory"
+              to="/#contact-id"
             >
-              Historia
+              Contacto
             </Link>
           </li>
           <li className="header__menu-li">
             <Link
-              className={isActivesHovers.Home ? "active" : ""}
+              className={currentURL === "/blog" ? "active-li" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
@@ -117,13 +115,13 @@ export const Header = () => {
           </li>
           <li className="header__menu-li header__menu-li--button">
             <Link
-              className={isActivesHovers.Contact ? "active-li" : ""}
+              className={currentURL === "/aboutHistory" ? "active-li" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
-              to="/#contact-id"
+              to="/aboutHistory"
             >
-              Contacto
+              Historia
             </Link>
           </li>
         </ul>

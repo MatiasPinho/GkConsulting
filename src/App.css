@@ -74,12 +74,18 @@ p {
 
 .button-a {
   cursor: pointer;
+  position: relative;
   border: none;
   outline: none;
   background-color: var(--tertiary);
   color: var(--quinary);
   border-radius: 6px;
   font-family: "Roboto Serif";
+  transition: all 0.4s;
+  z-index: 10;
+}
+.button-a:hover {
+  box-shadow: 0 0 18px var(--quaternary);
 }
 
 :root {
@@ -94,7 +100,7 @@ p {
 
 /* WebKit Scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -290,5 +296,15 @@ p {
   }
   100% {
     width: 100%;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: var(--tertiary);
+  }
+  100% {
+    background-color: #e6d7bf;
+    color: var(--primary);
   }
 }

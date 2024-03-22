@@ -24,7 +24,7 @@ function App() {
       ),
     },
     {
-      path: "/Blog",
+      path: "/blog",
       element: (
         <Root>
           <Blog />

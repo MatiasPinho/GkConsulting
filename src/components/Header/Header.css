@@ -1,3 +1,7 @@
+.overflow {
+  overflow: hidden;
+}
+
 .header {
   height: 75px;
   background-color: var(--primary);
@@ -100,7 +104,7 @@
     rgba(217, 200, 170, 0.3) 99.5%
   );
 
-  transition: width 0.5s ease;
+  transition: width 0.8s ease;
 }
 
 .header__menu-li a:hover::before {
@@ -109,7 +113,7 @@
 
 .active_li {
   position: relative;
-  animation: expandWidth 0.5s ease;
+  animation: expandWidth 0.8s ease;
 }
 
 .active-li::after {
@@ -125,7 +129,7 @@
     #d9c8aa 49%,
     rgba(217, 200, 170, 0.3) 99.5%
   );
-  animation: expandWidth 0.5s ease;
+  animation: expandWidth 0.8s ease;
 }
 
 @media (min-width: 800px) {
