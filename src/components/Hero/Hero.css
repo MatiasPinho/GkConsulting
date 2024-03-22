@@ -5,7 +5,7 @@
       rgb(0 0 0 / 48%) 26.99%,
       rgb(0 0 0 / 48%) 26.99%
     ),
-    url(/hero_background.avif);
+    url(/hero_background.webp);
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -90,7 +90,7 @@
         rgba(0, 0, 0, 0.31) 73.02%,
         rgba(0, 0, 0, 0.12) 83.72%
       ),
-      url(/hero_background.avif);
+      url(/hero_background.webp);
     align-items: flex-start;
     background-position: 25% 0%;
   }

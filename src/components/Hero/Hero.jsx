@@ -6,7 +6,7 @@ export const Hero = () => {
   useEffect(() => {
     const typewriter = new Typewriter(".hero-section__subtitle", {
       strings: [
-        "Potenciamos el crecimiento empresarial a través de una estructura.",
+        "Potenciamos el crecimiento empresarial a través de una estructura solida.",
       ],
       autoStart: true,
       loop: true,
@@ -26,6 +26,7 @@ export const Hero = () => {
         <h1 className="hero-section__title">
           Consultoria <strong> y Servicios </strong>
         </h1>
+
         <h2 className="hero-section__subtitle">
           Potenciamos el crecimiento empresarial a través de una estructura.
         </h2>
