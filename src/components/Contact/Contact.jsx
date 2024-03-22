@@ -161,7 +161,7 @@ export const Contact = () => {
                   <p>
                     <strong>Instagram:</strong>
                   </p>
-                  <p>Avenida brasil 332</p>
+                  <p>gkconsultingcompany</p>
                 </span>
               </li>
               <li className="contact__information-item">
