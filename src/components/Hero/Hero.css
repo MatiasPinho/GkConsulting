@@ -46,6 +46,8 @@
   font-size: 1.2rem;
   margin-top: 25px;
   max-width: 25ch;
+  max-height: 10em;
+  transition: max-height 0.3s ease;
 }
 
 .hero-section__button {

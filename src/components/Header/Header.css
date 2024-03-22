@@ -88,6 +88,7 @@
 
 .header__menu-li a {
   position: relative;
+  transition: 0.5s;
 }
 
 .header__menu-li a::before {
@@ -107,8 +108,8 @@
   transition: width 0.8s ease;
 }
 
-.header__menu-li a:hover::before {
-  width: 100%;
+.header__menu-li a:hover {
+  color: var(--septenary);
 }
 
 .active_li {

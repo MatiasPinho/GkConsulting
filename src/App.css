@@ -81,11 +81,12 @@ p {
   color: var(--quinary);
   border-radius: 6px;
   font-family: "Roboto Serif";
-  transition: all 0.4s;
+  transition: all 0.5s;
   z-index: 10;
 }
+
 .button-a:hover {
-  box-shadow: 0 0 18px var(--quaternary);
+  transform: scale(1.15);
 }
 
 :root {
@@ -114,7 +115,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #bba988; /* Color al pasar el mouse */
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar-track {
@@ -123,7 +124,7 @@ p {
 
 /* Mozilla Scrollbar */
 ::-moz-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 ::-moz-scrollbar-thumb {
@@ -268,7 +269,7 @@ p {
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
-  animation-range: entry 25% cover 35%;
+  animation-range: entry 10% cover 35%;
   animation-fill-mode: both;
 }
 
@@ -286,7 +287,7 @@ p {
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: left;
-  animation-range: entry 25% cover 35%;
+  animation-range: entry 10% cover 35%;
   animation-fill-mode: both;
 }
 
@@ -296,15 +297,5 @@ p {
   }
   100% {
     width: 100%;
-  }
-}
-
-@keyframes changeColor {
-  0% {
-    background-color: var(--tertiary);
-  }
-  100% {
-    background-color: #e6d7bf;
-    color: var(--primary);
   }
 }

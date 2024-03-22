@@ -6,7 +6,7 @@ export const UseScrollPosition = () => {
   const currentURL = location.pathname;
   console.log(currentURL);
   const [isActiveHovers, setIsActiveHovers] = useState({
-    Home: currentURL === "/aboutHistory" ? true : false,
+    Home: true,
     Services: false,
     About: false,
     History: false,
@@ -19,7 +19,6 @@ export const UseScrollPosition = () => {
       const scrollPosition = window.scrollY;
       let activeSection = null;
 
-      // Verificar si la ruta actual es "/aboutHistory" o "/blog"
       if (currentURL === "/aboutHistory" || currentURL === "/blog") {
         return;
       }
@@ -46,7 +45,6 @@ export const UseScrollPosition = () => {
       }));
     };
 
-    // Agregar el event listener solo si la ruta actual no es "/aboutHistory" ni "/blog"
     if (currentURL !== "/aboutHistory" && currentURL !== "/blog") {
       window.addEventListener("scroll", handleScroll);
     }
