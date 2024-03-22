@@ -93,6 +93,10 @@
   gap: 0.5rem;
 }
 
+.asd {
+  margin: 0 auto;
+}
+
 .contact__social-icons-circle {
   display: flex;
   align-items: center;
@@ -172,6 +176,7 @@ textarea:-webkit-autofill:active {
   position: relative;
   stroke: #d9c8aa;
   position: relative;
+  margin: 0 auto;
 }
 
 .contact__information-paragraph {

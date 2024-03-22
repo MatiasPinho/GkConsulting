@@ -53,13 +53,19 @@ export const Footer = () => {
           <p className="footer__contact-title">Contactanos:</p>
           <ul className="footer__contact-list">
             <li className="footer__contact-item">
-              <Linkedin />
+              <a href="https://www.linkedin.com/company/gkconsultingcompany/">
+                <Linkedin />
+              </a>
             </li>
             <li className="footer__contact-item">
-              <Instagram />
+              <a href="https://www.instagram.com/gkconsultingcompany/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+                <Instagram />
+              </a>
             </li>
             <li className="footer__contact-item">
-              <Email />
+              <a href="mailto:info@gkconsulting.com.ar ">
+                <Email />
+              </a>
             </li>
           </ul>
         </div>

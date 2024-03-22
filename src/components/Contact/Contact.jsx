@@ -73,7 +73,7 @@ export const Contact = () => {
                   type="text"
                   id="nombre"
                   name="from_name"
-                  placeholder="Carmen Barbieri"
+                  placeholder=""
                   required
                 />
                 <label className="contact__label" htmlFor="email">
@@ -84,7 +84,7 @@ export const Contact = () => {
                   type="email"
                   id="email"
                   name="from_email"
-                  placeholder="carmenbarbiere@gkconsulting.com"
+                  placeholder=""
                   required
                 />
                 <label className="contact__label" htmlFor="message">
@@ -122,7 +122,7 @@ export const Contact = () => {
                   <p>
                     <strong>Dirección:</strong>
                   </p>
-                  <p>Avenida brasil 332</p>
+                  <p>Pronto</p>
                 </span>
               </li>
               <li className="contact__information-item">
@@ -133,24 +133,30 @@ export const Contact = () => {
                   <p>
                     <strong>Telefono:</strong>
                   </p>
-                  <p>Avenida brasil 332</p>
+                  <p>Pronto</p>
                 </span>
               </li>
               <li className="contact__information-item">
-                <span className="contact__information-icon">
+                <a
+                  className="contact__information-icon"
+                  href="https://www.linkedin.com/company/gkconsultingcompany/"
+                >
                   <Linkedin />
-                </span>
+                </a>
                 <span className="contact__information-details">
                   <p>
                     <strong>LinkedIn:</strong>
                   </p>
-                  <p>Avenida brasil 332</p>
+                  <p> GKConsulting</p>
                 </span>
               </li>
               <li className="contact__information-item">
-                <span className="contact__information-icon">
+                <a
+                  className="contact__information-icon"
+                  href="https://www.instagram.com/gkconsultingcompany/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                >
                   <Instagram />
-                </span>
+                </a>
                 <span className="contact__information-details">
                   <p>
                     <strong>Instagram:</strong>
@@ -159,14 +165,17 @@ export const Contact = () => {
                 </span>
               </li>
               <li className="contact__information-item">
-                <span className="contact__information-icon">
+                <a
+                  className="contact__information-icon"
+                  href="mailto:info@gkconsulting.com.ar"
+                >
                   <Email />
-                </span>
+                </a>
                 <span className="contact__information-details">
                   <p>
                     <strong>Email:</strong>
                   </p>
-                  <p>Avenida brasil 332</p>
+                  <p>info@gkconsulting.com.ar</p>
                 </span>
               </li>
             </ul>
