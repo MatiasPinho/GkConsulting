@@ -253,7 +253,7 @@ p {
     animation-timing-function: ease-out;
   }
 }
-
+/* 
 @keyframes show {
   from {
     opacity: 0;
@@ -272,7 +272,7 @@ p {
   animation-name: show;
   animation-range: entry 10% cover 35%;
   animation-fill-mode: both;
-}
+} */
 
 @keyframes expandWidth {
   0% {
