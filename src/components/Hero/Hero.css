@@ -7,7 +7,7 @@
     ),
     url(/hero_background.avif);
   /* min-height: 100vh; */
-  min-height: calc(100vh - 4rem);
+  min-height: 40vh;
   position: relative;
   width: 100%;
   background-size: cover;
@@ -58,6 +58,10 @@
 }
 
 @media (min-width: 720px) {
+  .hero-section-container {
+    min-height: calc(100vh - 4rem);
+  }
+
   .hero-section {
     width: 80%;
     padding: 2rem 0;
