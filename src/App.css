@@ -72,6 +72,10 @@ p {
   font-weight: 400;
 }
 
+.normalizer-logo {
+  fill: var(--primary);
+}
+
 .button-a {
   cursor: pointer;
   position: relative;
@@ -260,33 +264,12 @@ p {
     scale: 100%;
   }
 }
-.services-section__info,
 .card-services,
-.about__images,
-.contact__margin,
-.contact__information {
+.about__image {
   view-timeline: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
-  animation-range: entry 10% cover 35%;
-  animation-fill-mode: both;
-}
-
-@keyframes left {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.about {
-  view-timeline: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: left;
   animation-range: entry 10% cover 35%;
   animation-fill-mode: both;
 }

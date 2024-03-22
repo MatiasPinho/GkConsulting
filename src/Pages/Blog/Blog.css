@@ -29,12 +29,6 @@
     1;
 }
 
-.blog__logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-}
-
 .blog__feed {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));

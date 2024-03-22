@@ -9,14 +9,14 @@ export const Hero = () => {
         "Potenciamos el crecimiento empresarial a través de una estructura.",
       ],
       autoStart: true,
-      loop: true, // Repetir el efecto de máquina de escribir infinitamente
+      loop: true,
       delay: 20,
       deleteSpeed: 18,
-      wrapperClassName: ".hero-section__subtitle", // Clase del contenedor
+      wrapperClassName: ".hero-section__subtitle",
     }).start();
 
     return () => {
-      typewriter.stop(); // Detener el efecto al desmontar el componente
+      typewriter.stop();
     };
   }, []);
   return (

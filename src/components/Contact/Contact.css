@@ -224,13 +224,13 @@ textarea:-webkit-autofill:active {
 .success-message {
   position: absolute;
   visibility: hidden;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   width: 356px;
   text-align: center;
-  background-color: #2c2e35;
+  background-color: #8b7659;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
-  box-shadow: 0 0 37px 0px #d9c8aa;
+  box-shadow: 0px 0px 14px 9px #8b7659;
   color: white;
   font-size: 1.4rem;
   top: 50%;
@@ -249,6 +249,10 @@ textarea:-webkit-autofill:active {
   .contact__title {
     width: 244px;
   }
+}
+
+.success-message {
+  width: 80%;
 }
 
 @media (max-width: 720px) {

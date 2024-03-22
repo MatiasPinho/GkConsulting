@@ -46,18 +46,18 @@ export const About = () => {
         <article className="about__images">
           <img
             className="about__image about__image--1"
-            src="./about_image.webp"
+            src="./about_image.avif"
             alt=""
           />
 
           <img
             className="about__image about__image--2"
-            src="./about_image2.webp"
+            src="./about_image2.avif"
             alt=""
           />
           <img
             className="about__image about__image--3"
-            src="./about_image3.webp"
+            src="./about_image3.avif"
             alt=""
           />
         </article>

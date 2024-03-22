@@ -5,7 +5,7 @@
       rgb(0 0 0 / 48%) 26.99%,
       rgb(0 0 0 / 48%) 26.99%
     ),
-    url(/imagen_fondo_borrable.png);
+    url(/hero_background.avif);
   /* min-height: 100vh; */
   min-height: calc(100vh - 4rem);
   position: relative;
@@ -32,6 +32,7 @@
 .hero-section svg {
   align-self: center;
   width: 120px;
+  fill: var(--tertiary);
   height: 120px;
 }
 
@@ -46,7 +47,7 @@
   font-size: 1.2rem;
   margin-top: 25px;
   max-width: 25ch;
-  max-height: 10em;
+  height: 3.5rem;
   transition: max-height 0.3s ease;
 }
 
@@ -90,8 +91,8 @@
         rgba(0, 0, 0, 0.31) 73.02%,
         rgba(0, 0, 0, 0.12) 83.72%
       ),
-      url(/imagen_fondo_borrable.png);
+      url(/hero_background.avif);
     align-items: flex-start;
-    background-position: 25% 30%;
+    background-position: 25% 0%;
   }
 }

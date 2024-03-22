@@ -1,15 +1,14 @@
 import React from "react";
 import "./Blog.css";
 import { InstagramEmbed } from "react-social-media-embed";
+import { LogoVariant } from "../../assets/icons/LogoVariant";
 
 export const Blog = () => {
   return (
     <section className="blog">
       <section className="blog-content">
         <div className="blog__header">
-          <a href="https://www.instagram.com/gkconsultingcompany/">
-            <img className="blog__logo" src="./gk_black.png" alt="" />
-          </a>
+          <a href="https://www.instagram.com/gkconsultingcompany/"></a>
 
           <h1 className="blog__title">
             <strong className="alternative-strong">GK</strong> Consulting

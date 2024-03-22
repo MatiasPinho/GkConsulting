@@ -1,9 +1,9 @@
-import { Logo } from "../../assets/icons/Logo";
 import { Linkedin } from "../../assets/icons/Linkedin";
 import { Instagram } from "../../assets/icons/Instagram";
 import { Email } from "../../assets/icons/Email";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
+import { LogoVariant } from "../../assets/icons/LogoVariant";
 export const Footer = () => {
   return (
     <footer id="footer-id" className="footer">
@@ -48,9 +48,7 @@ export const Footer = () => {
             </li>
           </ul>
         </nav>
-        <div className="footer__logo">
-          <img className="footer__logo-img" src="./gk_logo.png" alt="" />
-        </div>
+        <div className="footer__logo"></div>
         <div className="footer__contact">
           <p className="footer__contact-title">Contactanos:</p>
           <ul className="footer__contact-list">

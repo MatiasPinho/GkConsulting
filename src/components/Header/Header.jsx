@@ -1,9 +1,9 @@
 import "./Header.css";
-import { Logo as LogoIcon } from "../../assets/icons/Logo";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { UseScrollPosition } from "../../hooks/UseScrollPosition";
 import { useLocation } from "react-router-dom";
+import { LogoVariant } from "../../assets/icons/LogoVariant";
 
 export const Header = () => {
   const location = useLocation();
@@ -18,7 +18,7 @@ export const Header = () => {
   return (
     <header className="header">
       <nav className="header__nav">
-        <LogoIcon className="header__logo" />
+        <LogoVariant className="header__logo" />
         <div
           className={`menu-toggle ${isMenuClicked ? "menu-toggle-open" : ""}`}
           onClick={() => {
