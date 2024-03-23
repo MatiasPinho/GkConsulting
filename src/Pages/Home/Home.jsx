@@ -29,7 +29,7 @@ export const Home = () => {
           content="https://i.pinimg.com/originals/8e/f2/3e/8ef23e1394394a4776704de73a21ff40.png"
         />
       </Helmet>
-      {/* <Hero /> */}
+      <Hero />
       <Services />
       <About />
       <Contact />
