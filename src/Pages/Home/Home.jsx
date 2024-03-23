@@ -9,7 +9,7 @@ export const Home = () => {
     <>
       <Helmet>
         <title>GK Consulting: Innovación y Eficiencia para tu Empresa</title>
-
+        <link rel="preload" href="/hero_background.webp" as="image"></link>
         <meta
           name="description"
           content="Innovación y eficiencia son nuestra clave. Somos una consultora joven especializada en soluciones integrales para impulsar el crecimiento empresarial. Desde aspectos financieros y legales hasta planificación fiscal y resolución de conflictos, ofrecemos un enfoque personalizado para hacer a tu empresa más eficiente y competitiva."
