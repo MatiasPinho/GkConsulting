@@ -32,6 +32,8 @@ export const CardHistory = ({ name, description, img, surname }) => {
           }`}
           src={img}
           alt={`Imagen de la fundadora de GkConsulting ${(name, surname)}`}
+          height="470px"
+          width="470px"
         />
         <div
           onClick={() => {

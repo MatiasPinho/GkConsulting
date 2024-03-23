@@ -49,6 +49,8 @@ export const About = () => {
             src="./about_image.webp"
             alt="Imagen de las fundadores de GkConsulting"
             loading="lazy"
+            height="470px"
+            width="470px"
           />
 
           <img
@@ -56,12 +58,16 @@ export const About = () => {
             src="./about_image2.webp"
             alt="Imagen de las fundadores de GkConsulting"
             loading="lazy"
+            height="470px"
+            width="470px"
           />
           <img
             className="about__image about__image--3"
             src="./about_image3.webp"
             alt="Imagen de las fundadores de GkConsulting"
             loading="lazy"
+            height="470px"
+            width="470px"
           />
         </article>
       </div>
