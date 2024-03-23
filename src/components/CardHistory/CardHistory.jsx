@@ -11,7 +11,6 @@ export const CardHistory = ({ name, description, img, surname }) => {
         <a href="">
           <Linkedin className="about-history__profile-linkedin" />
         </a>
-
         <h2 className="about-history__profile-name">
           {surname === "Barbero" ? (
             <>
@@ -33,7 +32,7 @@ export const CardHistory = ({ name, description, img, surname }) => {
             isImageClicked ? "opacity-true_2" : ""
           }`}
           src={img}
-          alt=""
+          alt={`Imagen de la fundadora de GkConsulting ${(name, surname)}`}
         />
         <div
           onClick={() => {

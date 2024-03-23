@@ -47,18 +47,21 @@ export const About = () => {
           <img
             className="about__image about__image--1"
             src="./about_image.webp"
-            alt=""
+            alt="Imagen de las fundadores de GkConsulting"
+            loading="lazy"
           />
 
           <img
             className="about__image about__image--2"
             src="./about_image2.webp"
-            alt=""
+            alt="Imagen de las fundadores de GkConsulting"
+            loading="lazy"
           />
           <img
             className="about__image about__image--3"
             src="./about_image3.webp"
-            alt=""
+            alt="Imagen de las fundadores de GkConsulting"
+            loading="lazy"
           />
         </article>
       </div>
