@@ -20,7 +20,7 @@ export const Hero = () => {
     };
   }, []);
   return (
-    <section className="hero-section-container">
+    <section className="hero-section-container" rel="preload">
       <section className="hero-section">
         <LogoVariant />
         <h1 className="hero-section__title">
