@@ -8,7 +8,10 @@ export const CardHistory = ({ name, description, img, surname }) => {
   return (
     <article className="about-history__profile">
       <span className="about-history__profile-info">
-        <Linkedin className="about-history__profile-linkedin" />
+        <a href="">
+          <Linkedin className="about-history__profile-linkedin" />
+        </a>
+
         <h2 className="about-history__profile-name">
           {surname === "Barbero" ? (
             <>

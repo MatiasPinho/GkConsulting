@@ -36,6 +36,8 @@ export const Header = () => {
         >
           <li className="header__menu-li">
             <Link
+              aria-label="Ir al inicio"
+              title="Ir al inicio"
               className={
                 isActivesHovers.Home &&
                 currentURL !== "/aboutHistory" &&
@@ -53,6 +55,8 @@ export const Header = () => {
           </li>
           <li className="header__menu-li">
             <Link
+              aria-label="Ir a servicios"
+              title="Ir a servicios"
               className={
                 isActivesHovers.Services &&
                 currentURL !== "/aboutHistory" &&
@@ -70,6 +74,8 @@ export const Header = () => {
           </li>
           <li className="header__menu-li">
             <Link
+              aria-label="Ir a nosotras"
+              title="Ir a nosotras"
               className={
                 isActivesHovers.About &&
                 currentURL !== "/aboutHistory" &&
@@ -87,6 +93,8 @@ export const Header = () => {
           </li>
           <li className="header__menu-li">
             <Link
+              aria-label="Ir a contacto"
+              title="Ir a contacto"
               className={
                 isActivesHovers.Contact &&
                 currentURL !== "/aboutHistory" &&
@@ -104,6 +112,8 @@ export const Header = () => {
           </li>
           <li className="header__menu-li">
             <Link
+              aria-label="Ir a nuestro blog"
+              title="Ir a nuestro blog"
               className={currentURL === "/blog" ? "active-li" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);
@@ -115,6 +125,8 @@ export const Header = () => {
           </li>
           <li className="header__menu-li header__menu-li--button">
             <Link
+              aria-label="Ir a nuesta historia"
+              title="Ir a nuesta historia"
               className={currentURL === "/aboutHistory" ? "active-li" : ""}
               onClick={() => {
                 return setIsMenuClicked(false);

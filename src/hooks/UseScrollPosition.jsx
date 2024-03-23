@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 export const UseScrollPosition = () => {
   const location = useLocation();
   const currentURL = location.pathname;
-  console.log(currentURL);
   const [isActiveHovers, setIsActiveHovers] = useState({
     Home: true,
     Services: false,

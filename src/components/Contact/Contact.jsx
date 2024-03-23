@@ -8,6 +8,9 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 const apiUrl = import.meta.env.VITE_API_URL;
+const templateUrl = import.meta.env.VITE_TEMPLATE_URL;
+const publicKey = import.meta.env.PUBLIC_KEY;
+
 export const Contact = () => {
   const [isEmailSend, setIsEmailSend] = useState(false);
   useEffect(() => {
@@ -25,8 +28,8 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_3dwtylj", "template_m9u0it7", form.current, {
-        publicKey: "5PxRjwCCvz4MhrDbd",
+      .sendForm(apiUrl, templateUrl, form.current, {
+        publicKey: publicKey,
       })
       .then(
         () => {
@@ -54,6 +57,7 @@ export const Contact = () => {
                 onSubmit={sendEmail}
                 className="contact__form"
                 action=""
+                aria-label="Formulario de contacto" // Añadido
               >
                 <div
                   className={`success-message ${
@@ -74,6 +78,7 @@ export const Contact = () => {
                   id="nombre"
                   name="from_name"
                   placeholder=""
+                  aria-label="Nombre"
                   required
                 />
                 <label className="contact__label" htmlFor="email">
@@ -85,6 +90,7 @@ export const Contact = () => {
                   id="email"
                   name="from_email"
                   placeholder=""
+                  aria-label="Email"
                   required
                 />
                 <label className="contact__label" htmlFor="message">
@@ -94,12 +100,15 @@ export const Contact = () => {
                   className="contact__textarea"
                   name="message"
                   id="message"
+                  aria-label="Mensaje"
                   required
                 ></textarea>
                 <button
                   className="contact__button button-a"
                   type="submit"
                   value="Send"
+                  aria-label="Enviar email"
+                  title="Enviar email"
                 >
                   Enviar
                 </button>
@@ -140,6 +149,8 @@ export const Contact = () => {
                 <a
                   className="contact__information-icon"
                   href="https://www.linkedin.com/company/gkconsultingcompany/"
+                  aria-label="LinkedIn de GKConsulting"
+                  title="Ir a LinkedIn de GkConsulting"
                 >
                   <Linkedin />
                 </a>
@@ -154,6 +165,8 @@ export const Contact = () => {
                 <a
                   className="contact__information-icon"
                   href="https://www.instagram.com/gkconsultingcompany/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                  aria-label="Instagram de GKConsulting"
+                  title="Ir a Instagram de GkConsulting"
                 >
                   <Instagram />
                 </a>
@@ -168,6 +181,8 @@ export const Contact = () => {
                 <a
                   className="contact__information-icon"
                   href="mailto:info@gkconsulting.com.ar"
+                  aria-label="Email de GKConsulting"
+                  title="Ir al gmail de GkConsulting"
                 >
                   <Email />
                 </a>

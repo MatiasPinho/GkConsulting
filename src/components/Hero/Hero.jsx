@@ -30,7 +30,12 @@ export const Hero = () => {
         <h2 className="hero-section__subtitle">
           Potenciamos el crecimiento empresarial a través de una estructura.
         </h2>
-        <a href="/#about-id" className="hero-section__button button-a">
+        <a
+          href="/#about-id"
+          className="hero-section__button button-a"
+          title="Ir al formulario de contacto"
+          aria-label="Ir al formulario de contacto"
+        >
           Leer más
         </a>
       </section>
