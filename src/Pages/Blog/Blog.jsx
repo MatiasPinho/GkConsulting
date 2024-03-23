@@ -1,7 +1,6 @@
 import React from "react";
 import "./Blog.css";
 import { InstagramEmbed } from "react-social-media-embed";
-import { LogoVariant } from "../../assets/icons/LogoVariant";
 import { Helmet } from "react-helmet-async";
 
 export const Blog = () => {

@@ -22,7 +22,7 @@ export const Contact = () => {
   }, [isEmailSend]);
 
   console.log(isEmailSend);
-  console.log(apiUrl);
+
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();

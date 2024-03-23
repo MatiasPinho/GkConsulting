@@ -2,9 +2,8 @@ import { Linkedin } from "../../assets/icons/Linkedin";
 import { useState } from "react";
 import "./CardHistory.css";
 export const CardHistory = ({ name, description, img, surname }) => {
-  console.log(surname);
   const [isImageClicked, setIsImageClicked] = useState(false);
-  console.log(isImageClicked);
+
   return (
     <article className="about-history__profile">
       <span className="about-history__profile-info">
@@ -44,6 +43,7 @@ export const CardHistory = ({ name, description, img, surname }) => {
         >
           {description.map((paragraph) => {
             return <p key={paragraph}>{paragraph}</p>;
+            m;
           })}
         </div>
       </div>

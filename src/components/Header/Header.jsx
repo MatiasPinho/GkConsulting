@@ -1,6 +1,6 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { UseScrollPosition } from "../../hooks/UseScrollPosition";
 import { useLocation } from "react-router-dom";
 import { LogoVariant } from "../../assets/icons/LogoVariant";
