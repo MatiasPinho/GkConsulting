@@ -7,7 +7,11 @@ export const CardHistory = ({ name, description, img, surname }) => {
   return (
     <article className="about-history__profile">
       <span className="about-history__profile-info">
-        <a href="">
+        <a
+          href="https://www.linkedin.com/feed/"
+          aria-label="Ir al perfil de LinkedIn de creadora de GkConsulting"
+          title="Ir al perfil de LinkedIn de creadora de GkConsulting"
+        >
           <Linkedin className="about-history__profile-linkedin" />
         </a>
         <h2 className="about-history__profile-name">
