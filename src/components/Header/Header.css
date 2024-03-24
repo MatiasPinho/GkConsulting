@@ -46,7 +46,7 @@
   background-color: var(--quinary);
   border-radius: 10px;
   margin: 10px 0;
-  transition: 0.4s;
+  transition: 0.9s;
 }
 
 .header__nav svg {
@@ -67,7 +67,7 @@
   height: 100%;
   width: 100%;
   margin-top: 4.7rem;
-  transition: 0.6s;
+  transition: left 0.6s, right 0.6s;
   background-color: #2c2e35de;
   color: var(--quinary);
   font-size: 2rem;
@@ -89,7 +89,7 @@
 
 .header__menu-li a {
   position: relative;
-  transition: 0.5s;
+  transition: color 0.5s;
 }
 
 .header__menu-li a::before {
@@ -115,7 +115,6 @@
 
 .active_li {
   position: relative;
-  animation: expandWidth 0.8s ease;
 }
 
 .active-li::after {

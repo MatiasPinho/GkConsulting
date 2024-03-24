@@ -116,7 +116,13 @@ export const Header = () => {
             <Link
               aria-label="Ir a nuestro blog"
               title="Ir a nuestro blog"
-              className={currentURL === "/blog" ? "active-li" : ""}
+              className={
+                window.innerWidth <= 800
+                  ? null
+                  : currentURL === "/blog"
+                  ? "active-li"
+                  : ""
+              }
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
@@ -129,7 +135,13 @@ export const Header = () => {
             <Link
               aria-label="Ir a nuesta historia"
               title="Ir a nuesta historia"
-              className={currentURL === "/aboutHistory" ? "active-li" : ""}
+              className={
+                window.innerWidth <= 800
+                  ? null
+                  : currentURL === "/aboutHistory"
+                  ? "active-li"
+                  : ""
+              }
               onClick={() => {
                 return setIsMenuClicked(false);
               }}
