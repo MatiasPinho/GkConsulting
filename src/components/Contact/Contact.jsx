@@ -9,7 +9,7 @@ import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
 const apiUrl = import.meta.env.VITE_API_URL;
 const templateUrl = import.meta.env.VITE_TEMPLATE_URL;
-const publicKey = import.meta.env.PUBLIC_KEY;
+const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
 export const Contact = () => {
   const [isEmailSend, setIsEmailSend] = useState(false);
@@ -21,8 +21,6 @@ export const Contact = () => {
       : null;
   }, [isEmailSend]);
 
-  console.log(isEmailSend);
-
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,7 +31,6 @@ export const Contact = () => {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
           setIsEmailSend(true);
           form.current.reset();
         },
