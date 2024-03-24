@@ -9,11 +9,16 @@ export const UseScrollPosition = () => {
     About: false,
     Contact: false,
   });
+  const [lastNonHomePath, setLastNonHomePath] = useState(null);
 
   useEffect(() => {
     const currentURL = location.pathname;
 
     const handleScroll = () => {
+      if (window.innerWidth <= 800) {
+        return;
+      }
+
       const scrollPosition = window.scrollY;
       let activeSection = "Home";
 
@@ -48,6 +53,27 @@ export const UseScrollPosition = () => {
       }));
     };
 
+    const isHome = currentURL === "/";
+    if (isHome) {
+      setIsActiveHovers({
+        Home: true,
+        Services: false,
+        About: false,
+        Contact: false,
+      });
+
+      if (lastNonHomePath) {
+        setIsActiveHovers((prev) => ({
+          ...prev,
+          [lastNonHomePath]: true,
+          Home: false,
+        }));
+        setLastNonHomePath(null);
+      }
+    } else if (currentURL !== "/aboutHistory" && currentURL !== "/blog") {
+      setLastNonHomePath(currentURL);
+    }
+
     if (currentURL !== "/aboutHistory" && currentURL !== "/blog") {
       window.addEventListener("scroll", handleScroll);
     }
@@ -55,7 +81,7 @@ export const UseScrollPosition = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [location.pathname]);
+  }, [location.pathname, lastNonHomePath]);
 
   return isActiveHovers;
 };

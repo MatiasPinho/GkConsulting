@@ -39,9 +39,11 @@ export const Header = () => {
               aria-label="Ir al inicio"
               title="Ir al inicio"
               className={
-                isActivesHovers.Home &&
-                currentURL !== "/aboutHistory" &&
-                currentURL !== "/blog"
+                window.innerWidth <= 800
+                  ? null
+                  : isActivesHovers.Home &&
+                    currentURL !== "/aboutHistory" &&
+                    currentURL !== "/blog"
                   ? "active-li"
                   : ""
               }
