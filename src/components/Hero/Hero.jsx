@@ -46,7 +46,6 @@ export const Hero = () => {
           alt="Imagen de fondo alternativa para navegadores que no admiten WebP"
           width="1920"
           height="1080"
-          loading="lazy"
         />
       </picture>
       <section className="hero-section">
