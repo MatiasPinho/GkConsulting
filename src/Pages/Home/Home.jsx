@@ -4,6 +4,7 @@ import { Services } from "../../components/Services/Services";
 import { About } from "../../components/About/About";
 import { Contact } from "../../components/Contact/Contact";
 import { Helmet } from "react-helmet-async";
+
 export const Home = () => {
   return (
     <>

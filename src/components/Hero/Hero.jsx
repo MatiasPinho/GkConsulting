@@ -21,12 +21,41 @@ export const Hero = () => {
   }, []);
   return (
     <section className="hero-section-container" rel="preload">
+      <picture className="hero-picture">
+        <source
+          className="hero-section-container-background"
+          srcSet="./hero_background.webp"
+          media="(min-width: 721px)"
+          sizes="(min-width: 721px) 1920px, 100vw"
+          type="image/webp"
+          loading="lazy"
+          alt="Imagen de fondo para pantallas grandes"
+        />
+
+        <source
+          className="hero-section-container-background"
+          srcSet="./hero_background1.webp"
+          media="(max-width: 721px)"
+          sizes="(max-width: 721px) 480px, 100vw"
+          type="image/webp"
+          loading="lazy"
+          alt="Imagen de fondo para pantallas pequeñas"
+        />
+
+        <img
+          className="hero-section-container-background"
+          src="./hero_background.webp"
+          alt="Imagen de fondo alternativa para navegadores que no admiten WebP"
+          width="1920"
+          height="1080"
+          loading="lazy"
+        />
+      </picture>
       <section className="hero-section">
         <LogoVariant />
         <h1 className="hero-section__title">
           Consultoria <strong> y Servicios </strong>
         </h1>
-
         <h2 className="hero-section__subtitle">
           Potenciamos el crecimiento empresarial a través de una estructura.
         </h2>
