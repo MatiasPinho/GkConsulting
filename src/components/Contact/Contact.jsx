@@ -114,8 +114,8 @@ export const Contact = () => {
           </section>
           <section className="contact__information">
             <p className="contact__information-paragraph">
-              "¡Hola! En GK Consulting estamos aquí para ayudarte. Te
-              responderemos a la brevedad posible. ¡Gracias por contactarnos!"
+              Hola, en GK Consulting estamos aquí para ayudarte. Te
+              responderemos a la brevedad posible. ¡Gracias por contactarnos!
             </p>
 
             <ul className="contact__information-list">
