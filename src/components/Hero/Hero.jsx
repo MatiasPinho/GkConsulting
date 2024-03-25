@@ -28,7 +28,6 @@ export const Hero = () => {
           media="(min-width: 721px)"
           sizes="(min-width: 721px) 1920px, 100vw"
           type="image/webp"
-          loading="lazy"
           alt="Imagen de fondo para pantallas grandes"
         />
 
@@ -38,7 +37,6 @@ export const Hero = () => {
           media="(max-width: 721px)"
           sizes="(max-width: 721px) 480px, 100vw"
           type="image/webp"
-          loading="lazy"
           alt="Imagen de fondo para pantallas pequeñas"
         />
 
