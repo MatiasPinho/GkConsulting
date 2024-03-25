@@ -114,9 +114,8 @@ export const Contact = () => {
           </section>
           <section className="contact__information">
             <p className="contact__information-paragraph">
-              Curabitur tempor, sem at hendrerit maximus, elit turpis ornare
-              nunc, sit amet bibendum tortor lacus ut dolor. Fusce mi arcu,
-              iaculis at tortor eu, efficitur iaculis leo.
+              "¡Hola! En GK Consulting estamos aquí para ayudarte. Te
+              responderemos a la brevedad posible. ¡Gracias por contactarnos!"
             </p>
 
             <ul className="contact__information-list">
