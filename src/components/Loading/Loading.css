@@ -28,30 +28,30 @@
 }
 
 .letter-g {
-  left: 0; 
+  left: 0;
   animation-name: slideFromLeft;
 }
 
 .letter-k {
-  right: 0; 
+  right: 0;
   animation-name: slideFromRight;
 }
 
 @keyframes slideFromLeft {
   0% {
-    left: -100px; 
+    left: -100px;
   }
   100% {
-    left: calc(50% - 200px - 30px); /
+    left: calc(50% - 200px - 30px);
   }
 }
 
 @keyframes slideFromRight {
   0% {
-    right: -100px; 
+    right: -100px;
   }
   100% {
-    right: calc(50% - 200px - 30px); 
+    right: calc(50% - 200px - 30px);
   }
 }
 
@@ -63,19 +63,19 @@
 
   @keyframes slideFromRight {
     0% {
-      right: -100px; 
+      right: -100px;
     }
     100% {
-      right: calc(50% - 100px - 10px); 
+      right: calc(50% - 100px - 10px);
     }
   }
 
   @keyframes slideFromLeft {
     0% {
-      left: -100px; 
+      left: -100px;
     }
     100% {
-      left: calc(50% - 100px - 10px); 
+      left: calc(50% - 100px - 10px);
     }
   }
 }
