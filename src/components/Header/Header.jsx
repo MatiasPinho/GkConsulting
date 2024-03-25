@@ -133,8 +133,8 @@ export const Header = () => {
           </li>
           <li className="header__menu-li header__menu-li--button">
             <Link
-              aria-label="Ir a nuesta historia"
-              title="Ir a nuesta historia"
+              aria-label="Ir a nuestra historia"
+              title="Ir a nuestra historia"
               className={
                 window.innerWidth <= 800
                   ? null

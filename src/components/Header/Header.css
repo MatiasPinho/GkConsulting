@@ -163,7 +163,7 @@
     font-weight: 300;
   }
 
-  .header__menu-li--button {
+  .header__menu-ul > li:last-child > a {
     background-color: var(--tertiary);
     border-radius: 9px;
     padding: 0.5rem 1rem;

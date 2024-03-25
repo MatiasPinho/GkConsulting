@@ -1,6 +1,6 @@
 {
   "cardServices_1": {
-    "title": "Servicios Contables",
+    "title": "Servicios Legales",
     "description": [
       "Constitución de empresas (S.R.L., S.A., S.A.U., S.A.S, Fundaciones, etc.)",
       "Libros Societarios",
@@ -15,7 +15,7 @@
   },
 
   "cardServices_2": {
-    "title": "Servicios Legales",
+    "title": "Servicios Contables",
     "description": [
       "Análisis y Planificación Financiera",
       "Liquidación de Impuestos mensuales",

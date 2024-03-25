@@ -23,6 +23,10 @@
   margin-top: 1rem;
 }
 
+.card-services__title {
+  font-weight: 500;
+}
+
 .card-services__ul-description-container {
   display: flex;
   flex-direction: column;
