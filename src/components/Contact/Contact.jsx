@@ -7,9 +7,6 @@ import { Instagram } from "../../assets/icons/Instagram";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useEffect } from "react";
-const apiUrl = import.meta.env.VITE_API_URL;
-const templateUrl = import.meta.env.VITE_TEMPLATE_URL;
-const publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
 export const Contact = () => {
   const [isEmailSend, setIsEmailSend] = useState(false);
@@ -26,8 +23,8 @@ export const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(apiUrl, templateUrl, form.current, {
-        publicKey: publicKey,
+      .sendForm(env.VITE_API_URL, env.VITE_TEMPLATE_URL, form.current, {
+        publicKey: env.VITE_PUBLIC_KEY,
       })
       .then(
         () => {
