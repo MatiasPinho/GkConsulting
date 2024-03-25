@@ -54,7 +54,7 @@ export const Contact = () => {
                 onSubmit={sendEmail}
                 className="contact__form"
                 action=""
-                aria-label="Formulario de contacto" // Añadido
+                aria-label="Formulario de contacto"
               >
                 <div
                   className={`success-message ${
@@ -121,31 +121,44 @@ export const Contact = () => {
 
             <ul className="contact__information-list">
               <li className="contact__information-item">
-                <span className="contact__information-icon">
+                <a
+                  href="https://maps.app.goo.gl/pGy924YbHq48qekZ9"
+                  target="no_blank"
+                  className="contact__information-icon"
+                  aria-label="Ver version de GkConsulting"
+                  title="Ver version de GkConsulting"
+                >
                   <Location />
-                </span>
+                </a>
                 <span className="contact__information-details">
                   <p>
                     <strong>Dirección:</strong>
                   </p>
-                  <p>Pronto</p>
+                  <p>Laprida 1120 CABA </p>
                 </span>
               </li>
               <li className="contact__information-item">
-                <span className="contact__information-icon">
+                <a
+                  href="tel:1156053223"
+                  target="no_blank"
+                  className="contact__information-icon"
+                  aria-label="Llamar a GkConsulting"
+                  title="Llamar a GkConsulting"
+                >
                   <Phone />
-                </span>
+                </a>
                 <span className="contact__information-details">
                   <p>
                     <strong>Telefono:</strong>
                   </p>
-                  <p>Pronto</p>
+                  <p>1156053223</p>
                 </span>
               </li>
               <li className="contact__information-item">
                 <a
                   className="contact__information-icon"
                   href="https://www.linkedin.com/company/gkconsultingcompany/"
+                  target="no_blank"
                   aria-label="LinkedIn de GKConsulting"
                   title="Ir a LinkedIn de GkConsulting"
                 >
@@ -162,6 +175,7 @@ export const Contact = () => {
                 <a
                   className="contact__information-icon"
                   href="https://www.instagram.com/gkconsultingcompany/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                  target="no_blank"
                   aria-label="Instagram de GKConsulting"
                   title="Ir a Instagram de GkConsulting"
                 >
@@ -178,6 +192,7 @@ export const Contact = () => {
                 <a
                   className="contact__information-icon"
                   href="mailto:info@gkconsulting.com.ar"
+                  target="no_blank"
                   aria-label="Email de GKConsulting"
                   title="Ir al gmail de GkConsulting"
                 >

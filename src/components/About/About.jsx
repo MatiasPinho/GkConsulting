@@ -32,7 +32,7 @@ export const About = () => {
             </p>
             <p className="about__info-paragraph">
               En GK Consulting , creemos que cada cliente es único y merece un
-              enfoque personalizado. Nuestro objetivo es en encontrar soluciones
+              enfoque personalizado. Nuestro objetivo es encontrar soluciones
               creativas y adaptativas para cada desafío que enfrenta tu empresa.
             </p>
             <p className="about__info-paragraph">
